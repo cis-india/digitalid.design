@@ -3347,6 +3347,15 @@ input, select, textarea {
 					color: #000;
 				}
 
+				#wrapper section > header #date {
+					font-size: 0.9rem;
+					color: #222;
+					font-family: "Fira Sans", sans;
+					letter-spacing: 0;
+					line-height: 1.4rem; 
+					margin-bottom: 2rem;
+				}
+
 			#wrapper section > .content {
 				grid-area: content;
 				max-width: 60rem;
@@ -3486,7 +3495,7 @@ input, select, textarea {
 			}
 
 		#wrapper section {
-			margin: 4rem 0 0 0;
+			margin: 6rem 0 0 0;
 		}
 
 			#wrapper section > header {

@@ -3349,6 +3349,17 @@ input, select, textarea {
 					color: #000;
 				}
 
+				#wrapper section > header #meta {
+					font-size: 0.9rem;
+					color: #222;
+					font-family: "Fira Sans", sans;
+					letter-spacing: 0;
+					line-height: 1.4rem; 
+					text-align: right;
+					margin-top: 0.2rem;
+					margin-bottom: 2rem;
+				}
+
 			#wrapper section > .content {
 				grid-area: content;
 				max-width: 60rem;
