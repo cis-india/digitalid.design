@@ -204,6 +204,12 @@ input, select, textarea {
 		line-height: 1.8rem;
 	}
 
+	footer > p {
+		font-size: 0.8rem;
+		line-height: 1.5rem;
+		text-align: right;
+	}
+
 	h1, h2, h3, h4, h5, h6 {
 		color: #000000;
 		font-family: "IBM Plex Serif", sans-serif;
@@ -2553,6 +2559,7 @@ input, select, textarea {
 			clear: both;
 			top: 0;
 			left: 0;
+			margin-bottom: 0.8em;
 		}
 
 			.image.logo img {
@@ -3265,7 +3272,7 @@ input, select, textarea {
 
 		#wrapper:before {
 			background-attachment: fixed;
-			background-color: #05a785;
+			background-color: #69c3aa;
 			background-position: -50% 10%;
 			background-repeat: repeat-y;
 			background-size: 75% auto;
@@ -3325,7 +3332,7 @@ input, select, textarea {
 					border-bottom: 1px dotted #fff;
 				}
 
-				#wrapper section > header #blurb a:hover, a:active {
+				#wrapper section > header #blurb a:hover {
 					color: #fff;
 					border-bottom: 1px solid #fff;
 				}
@@ -3443,7 +3450,7 @@ input, select, textarea {
 			}
 
 				#wrapper > section.intro > header {
-					padding-top: 4rem;
+					padding-top: 0rem;
 					width: 100%;
 				}
 
@@ -3456,7 +3463,9 @@ input, select, textarea {
 					}
 
 				#wrapper > section.intro > .content {
-					height: 100vh;
+/*
+				height: 100vh;
+*/
 					max-width: none;
 				}
 
@@ -3477,7 +3486,7 @@ input, select, textarea {
 			}
 
 		#wrapper section {
-			margin: 5rem 0 0 0;
+			margin: 4rem 0 0 0;
 		}
 
 			#wrapper section > header {
@@ -3666,7 +3675,7 @@ input, select, textarea {
 
 					#wrapper > section > header {
 						background-attachment: fixed;
-						background-color: #05a785;
+						background-color: #69c3aa;
 						background-position: 25% 50%;
 						background-repeat: repeat-y;
 						background-size: 40rem auto;
