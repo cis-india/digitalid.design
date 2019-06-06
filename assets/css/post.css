@@ -365,8 +365,8 @@ input, select, textarea {
 
 	hr {
 		border: 0;
-		border-bottom: solid 2px rgba(144, 144, 144, 0.25);
-		margin: 3rem 0;
+		border-bottom: solid 4px #69c3aa;
+		margin: 0 3rem 4rem 3rem;
 	}
 
 		hr.major {
@@ -3273,7 +3273,7 @@ input, select, textarea {
 
 		#wrapper:before {
 			background-attachment: fixed;
-			background-color: #05a785;
+			background-color: #69c3aa;
 			background-position: -50% 10%;
 			background-repeat: repeat-y;
 			background-size: 75% auto;
@@ -3453,7 +3453,7 @@ input, select, textarea {
 
 			#wrapper > section.intro {
 				align-items: center;
-				background-color: #05a785;
+				background-color: #69c3aa;
 			}
 
 				#wrapper > section.intro > header {
@@ -3751,6 +3751,15 @@ input, select, textarea {
 							margin-bottom: 0;
 						}
 
+						#wrapper > section.intro > header h1 a {
+							border-bottom: 0px solid #fff;
+						}
+
+						#wrapper > section.intro > header h1 a:hover {
+							border-bottom: 0px solid #fff;
+							color: #222;
+						}
+
 							#wrapper > section.intro > header ul.actions {
 								display: none;
 							}
@@ -3786,8 +3795,18 @@ input, select, textarea {
 					margin: 0;
 				}
 
+				#wrapper > .greenbottom {
+					border-bottom: 4px solid #69c3aa;
+					margin-bottom: 4em;
+				}
+
 					#wrapper > section > header {
-						padding: 0rem 4rem 4rem 4rem;
+						padding: 0.2rem 4rem 4rem 4rem;
+					}
+
+					#wrapper > section > header h3 {
+						font-size: 1.4em;
+						text-align: right;
 					}
 
 					#wrapper > section > .content {
@@ -3799,23 +3818,19 @@ input, select, textarea {
 						}
 
 					#wrapper > section > .content > h3 {
-						font-size: 1.5em;
+						font-size: 1.2rem;
 						letter-spacing: 0em;
-						margin-bottom: 0rem;
+						line-height: 1.4em;
+						margin-bottom: 0.3em;
 					}
 
 					#wrapper > section > .content > h5 {
+						color: #69c3aa;
+						font-family: "Fira Sans", sans;
 						font-size: 0.8em;
 						letter-spacing: 0.15em;
 						margin-bottom: 0rem;
 						text-transform: uppercase;
-					}
-
-					#wrapper > section > .content > #desc {
-						color: #888;
-						font-size: 1em;
-						font-style: italic;
-						line-height: 1.3em;
 					}
 
 					#wrapper > section > footer {
