@@ -2493,7 +2493,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 45%;
 		}
 
 			.image.left img, .image.right img {
@@ -2502,13 +2502,13 @@ input, select, textarea {
 
 		.image.left {
 			float: left;
-			margin: 0 2rem 2rem 0;
+			margin: 3rem 1rem 1rem 0;
 			top: 0.25rem;
 		}
 
 		.image.right {
 			float: right;
-			margin: 0 0 2rem 2rem;
+			margin: 3rem 0 1rem 0rem;
 			top: 0.25rem;
 		}
 
@@ -2570,6 +2570,18 @@ input, select, textarea {
 				float: right;
 				clear: both;
 				top: 0;
+			}
+
+			.image.featured img {
+				-webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+				filter: grayscale(0%);
+				border: 4px solid #69c3aa;
+			}
+
+			.image.featured img:hover {
+				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+				filter: grayscale(100%);
+				border: 4px solid #888;
 			}
 
 /* List */
