@@ -195,6 +195,33 @@ input, select, textarea {
 		font-style: italic;
 	}
 
+	.hoverText {
+/*		background: rgba(0,0,0,0.5);	*/
+		background: #69c3aa;
+		color: #222;
+		cursor: pointer;
+		display: table;
+		font-size: 2rem;
+		font-style: italic;
+		height: 100%;
+		left: 0;
+		position: absolute;
+		top: 0;
+		width: 100%;
+		opacity: 0;
+	}
+
+	.hoverText:hover {
+		opacity: 0.8;
+	}
+
+	.hoverText span {
+		text-decoration: underline;
+		display: table-cell;
+		text-align: center;
+		vertical-align: middle;
+	}
+
 	p {
 		margin: 0 0 0.5rem 0;
 		color: #222;
@@ -2578,11 +2605,11 @@ input, select, textarea {
 				border: 4px solid #69c3aa;
 			}
 
-			.image.featured img:hover {
-				-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-				filter: grayscale(100%);
-				border: 4px solid #888;
-			}
+				.image.featured img:hover {
+					-webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+					filter: grayscale(100%);
+					border: 4px solid #888;
+				}
 
 /* List */
 
@@ -3478,6 +3505,7 @@ input, select, textarea {
 					padding-top: 0rem;
 					width: 100%;
 				}
+
 /*
 					#wrapper > section.intro > header > * {
 						margin-left: -2.5rem;
@@ -3493,6 +3521,7 @@ input, select, textarea {
 */
 					max-width: none;
 				}
+
 /*
 			#wrapper > section:last-of-type > header:before {
 				height: 100%;

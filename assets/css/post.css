@@ -238,7 +238,8 @@ input, select, textarea {
 	}
 
 	h2 {
-		font-size: 2.5rem;
+		font-size: 2.3rem;
+		font-style: italic;
 		font-weight: 400;
 		margin: 0 0 1rem 0;
 		letter-spacing: 0;
@@ -246,15 +247,18 @@ input, select, textarea {
 	}
 
 	h3 {
-		font-size: 0.875rem;
+		font-size: 2rem;
+		font-weight: 400;
+		letter-spacing: 0rem;
+		line-height: 2.8rem;
 	}
 
 	h4 {
-		font-size: 0.875rem;
+		font-size: 1.2rem;
 	}
 
 	h5 {
-		font-size: 0.75rem;
+		font-size: 0.8rem;
 	}
 
 	h6 {
@@ -3163,9 +3167,7 @@ input, select, textarea {
 
 			.image.logo img {
 				display: block;
-				float: none;
-				margin-left: auto;
-				margin-right: auto;
+				float: right;
 			}
 
 		}
@@ -3314,9 +3316,9 @@ input, select, textarea {
 				text-align: right;
 			}
 
-				#wrapper section > header h2 {
-					margin: 0 0 2rem 0;
+				#wrapper section > header h4 {
 					color: #222;
+					margin: 0 0 2rem 0;
 				}
 
 				#wrapper section > header h1 + p {
@@ -3367,7 +3369,7 @@ input, select, textarea {
 					line-height: 1.4rem; 
 					text-align: right;
 					margin-top: 0.2rem;
-					margin-bottom: 2rem;
+					margin-bottom: 1rem;
 				}
 
 			#wrapper section > .content {
@@ -3424,14 +3426,14 @@ input, select, textarea {
 				width: 2px;
 			}
 
-			#wrapper > section > header h1, #wrapper > section > header h2 {
+			#wrapper > section > header h1, #wrapper > section > header h3 {
 				position: relative;
 			}
 
-			#wrapper > section > header h2 {
+			#wrapper > section > header h3 {
 				text-align: right;
 			}
-
+/*
 				#wrapper > section > header h1:before, #wrapper > section > header h2:before {
 					background: #222222;
 					content: '';
@@ -3451,11 +3453,11 @@ input, select, textarea {
 					top: 0.75rem;
 					width: 0.5rem;
 				}
-
+*/
 			#wrapper > section > header h1 {
 				margin-top: -2rem;
 			}
-
+/*
 				#wrapper > section > header h1:before {
 					top: 3rem;
 				}
@@ -3463,7 +3465,7 @@ input, select, textarea {
 				#wrapper > section > header h1:after {
 					top: 2.75rem;
 				}
-
+*/
 			#wrapper > section > .content > section {
 				position: relative;
 			}
@@ -3826,8 +3828,8 @@ input, select, textarea {
 					}
 
 					#wrapper > section > header h3 {
-						font-size: 1.4em;
 						text-align: right;
+						top: -0.5rem;
 					}
 
 					#wrapper > section > .content {
@@ -3838,7 +3840,7 @@ input, select, textarea {
 							margin: 4rem 0;
 						}
 
-					#wrapper > section > .content > h3 {
+					#wrapper > section > .content > h4 {
 						font-size: 1.2rem;
 						letter-spacing: 0em;
 						line-height: 1.4em;
@@ -3875,8 +3877,16 @@ input, select, textarea {
 
 		@media screen and (max-width: 1152px) {
 
+			h2 {
+				font-size: 2.2rem;
+			}
+
 			hr {
 				margin: 1rem 3rem 2rem 3rem;
+			}
+
+			.image.logo {
+				padding-bottom: 1rem;
 			}
 
 			#wrapper section {
@@ -3891,19 +3901,20 @@ input, select, textarea {
 			}
 
 				#wrapper > section > header {
-					padding: 0.5rem 3rem 0rem 3rem;
+					padding: 0rem 3rem 0rem 3rem;
+					margin-bottom: 0rem;
 				}
 
 				#wrapper > section > header > * {
 					max-width: none;
 				}
 
-				#wrapper section > header h2 {
+				#wrapper section > header h3 {
 					max-width: none;
-					text-align: center;
+					text-align: left;
 					width: 100%;
-					padding-bottom: 2rem;
-					margin-top: 0rem;
+					padding-bottom: 0rem;
+					margin-top: 0.2rem;
 				}
 
 				#wrapper section > header #meta {
@@ -3912,7 +3923,7 @@ input, select, textarea {
 				}
 
 				#wrapper > section > .content {
-					padding: 0rem 2rem 2rem 2rem;
+					padding: 1rem 2rem 2rem 2rem;
 					max-width: 200rem;
 					text-align: left;
 					width: 100%;
@@ -3922,11 +3933,11 @@ input, select, textarea {
 						margin: 3rem 0;
 					}
 
-				#wrapper section > .content h3,
+				#wrapper section > .content h4,
 				#wrapper section > .content h5,
 				#wrapper section > .content p {
-					padding-left: 5%;
-					padding-right: 5%;
+					padding-left: 1rem;
+					padding-right: 1rem;
 				}
 
 				#wrapper > section > footer {
@@ -3948,7 +3959,7 @@ input, select, textarea {
 			}
 
 			footer > p {
-   				text-align: center;
+   				text-align: left;
 			}
 
 		@media screen and (max-width: 360px) {
@@ -3962,11 +3973,16 @@ input, select, textarea {
 			}
 
 				#wrapper > section > header {
-					padding: 2.25rem 1.5rem;
+					padding: 0rem 1.5rem 0rem 1.5rem;
 				}
 
+				#wrapper section > header h3 {
+					padding-left: 0.5rem;
+					padding-top: 0.5rem;
+				} 
+
 				#wrapper > section > .content {
-					padding: 2.25rem 1.5rem;
+					padding: 0rem 1.5rem 1rem 1rem;
 				}
 
 					#wrapper > section > .content > section {
@@ -3981,8 +3997,13 @@ input, select, textarea {
 					padding: 4.875rem 1.5rem 1.875rem 1.5rem;
 				}
 
-			#wrapper .copyright {
-				padding: 0 1.5rem 1.5rem 1.5rem;
+				#wrapper > #first > .content {
+    				padding: 2rem 0 1rem 0;
+				}
+
+			.image.logo img {
+				margin-right: 2rem;
+				width: 50%;
 			}
 
 		}
@@ -4096,11 +4117,15 @@ input, select, textarea {
 		}
 
 		h1 {
-			font-size: 1.8rem;
+			font-size: 2.2rem;
 		}
 
 		h2 {
-			font-size: 1.6rem;
+			font-size: 1.8rem;
+		}
+
+		h3 {
+			font-size: 1.5rem;
 		}
 
 		image.logo img {
